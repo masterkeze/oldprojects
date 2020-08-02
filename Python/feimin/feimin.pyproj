@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{add5af8c-ad80-402e-9036-1a466b101718}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>xlrd_test.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="tutorial\tutorial-master\bootstrap.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlrd\cell_access.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlrd\cell_types.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlrd\dates.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlrd\emptyblank.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlrd\errors.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlrd\introspect_book.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlrd\introspect_sheet.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlrd\large_files.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlrd\open.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlrd\sheet_iteration.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlrd\simple.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlrd\utilities.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlutils\copy.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlutils\display.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlutils\filter.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlutils\styles.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlwt\borders.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlwt\cell_types.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlwt\easyxf_format.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlwt\format_rowscols.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlwt\formulae.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlwt\hyperlinks.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlwt\images.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlwt\merged.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlwt\outlines.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlwt\overwriting.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlwt\panes.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlwt\simple.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlwt\stylecompression.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlwt\utilities.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlwt\xfstyle_format.py" />
+    <Compile Include="tutorial\tutorial-master\students\xlwt\zoom.py" />
+    <Compile Include="tutorial\tutorial-master\tests\test_examples.py" />
+    <Compile Include="xlrd_test.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tutorial\tutorial-master\80x15.png" />
+    <Content Include="tutorial\tutorial-master\students\xlwt\python.bmp" />
+    <Content Include="tutorial\tutorial-master\tests\expected\xlrd\cell_access.txt" />
+    <Content Include="tutorial\tutorial-master\tests\expected\xlrd\cell_types.txt" />
+    <Content Include="tutorial\tutorial-master\tests\expected\xlrd\dates.txt" />
+    <Content Include="tutorial\tutorial-master\tests\expected\xlrd\emptyblank.txt" />
+    <Content Include="tutorial\tutorial-master\tests\expected\xlrd\errors.txt" />
+    <Content Include="tutorial\tutorial-master\tests\expected\xlrd\introspect_book.txt" />
+    <Content Include="tutorial\tutorial-master\tests\expected\xlrd\introspect_sheet.txt" />
+    <Content Include="tutorial\tutorial-master\tests\expected\xlrd\large_files.txt" />
+    <Content Include="tutorial\tutorial-master\tests\expected\xlrd\open.txt" />
+    <Content Include="tutorial\tutorial-master\tests\expected\xlrd\sheet_iteration.txt" />
+    <Content Include="tutorial\tutorial-master\tests\expected\xlrd\simple.txt" />
+    <Content Include="tutorial\tutorial-master\tests\expected\xlrd\utilities.txt" />
+    <Content Include="tutorial\tutorial-master\tests\expected\xlutils\display.txt" />
+    <Content Include="tutorial\tutorial-master\tests\expected\xlutils\styles.txt" />
+    <Content Include="tutorial\tutorial-master\tests\expected\xlwt\overwriting.txt" />
+    <Content Include="tutorial\tutorial-master\tests\expected\xlwt\utilities.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="tutorial\" />
+    <Folder Include="tutorial\tutorial-master" />
+    <Folder Include="tutorial\tutorial-master\students\" />
+    <Folder Include="tutorial\tutorial-master\students\xlrd" />
+    <Folder Include="tutorial\tutorial-master\students\xlutils" />
+    <Folder Include="tutorial\tutorial-master\students\xlwt" />
+    <Folder Include="tutorial\tutorial-master\tests" />
+    <Folder Include="tutorial\tutorial-master\tests\expected\" />
+    <Folder Include="tutorial\tutorial-master\tests\expected\xlrd" />
+    <Folder Include="tutorial\tutorial-master\tests\expected\xlutils" />
+    <Folder Include="tutorial\tutorial-master\tests\expected\xlwt" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
